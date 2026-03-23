@@ -23,7 +23,7 @@ const Navbar = () => {
                 <Show when="signed-out">
                     <SignInButton >
                         <button className='px-6 py-3 border rounded-4xl cursor-pointer hover:text-black hover:bg-white'>
-                            <Link href={"/login"} >Log in</Link>
+                            Log in
                         </button>
                     </SignInButton>
                     <SignUpButton>

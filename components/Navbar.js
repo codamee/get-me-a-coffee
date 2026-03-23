@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import { Show, SignInButton, SignUpButton, UserButton } from '@clerk/nextjs'
 
 const Navbar = () => {
     return (
@@ -11,6 +12,7 @@ const Navbar = () => {
                 <p className='hover:bg-white rounded-4xl px-6 py-3 hover:text-black'>Resources</p>
                 <button className='px-6 py-3 mx-4 border rounded-4xl cursor-pointer hover:text-black hover:bg-white'>Updates</button>
             </div>
+
             <div className='w-1/5 text-2xl font-bold '>
                 <Link href={"/"} >PATREON</Link>
             </div>
@@ -18,10 +20,19 @@ const Navbar = () => {
                 <div>
                     <input className='px-6 py-3 border rounded-4xl  focus:text-black focus:bg-white' type="search" name="" id="" placeholder='find a creator' />
                 </div>
-                <button className='px-6 py-3 border rounded-4xl cursor-pointer hover:text-black hover:bg-white'>
-                    <Link href={"/login"} >Log in</Link>
-                </button>
-                <button className='px-6 py-3 bg-white text-black cursor-pointer rounded-4xl'>Get Started</button>
+                <Show when="signed-out">
+                    <SignInButton >
+                        <button className='px-6 py-3 border rounded-4xl cursor-pointer hover:text-black hover:bg-white'>
+                            <Link href={"/login"} >Log in</Link>
+                        </button>
+                    </SignInButton>
+                    <SignUpButton>
+                        <button className='px-6 py-3 bg-white text-black cursor-pointer rounded-4xl'>Get Started</button>
+                    </SignUpButton>
+                </Show>
+                <Show when="signed-in">
+                    <UserButton />
+                </Show>
             </div>
         </nav>
     )

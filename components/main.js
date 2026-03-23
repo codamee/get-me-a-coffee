@@ -5,28 +5,35 @@ import Image from 'next/image'
 const Main = () => {
     return (
         <div className='overflow-hidden '>
-            <div className='flex flex-col justify-end text-[10rem] min-h-[86vh] bg-blue-400  p-10'>
-                <p>Your Wildest</p>
-                <div className=' flex justify-between items-center'>
-                    <lord-icon
-                        src="https://cdn.lordicon.com/gupcdncx.json"
-                        trigger="loop"
-                        state="loop-cycle"
-                        colors="primary:#121331,secondary:#000000"
-                        style={{ "width": "100px", "height": "100px" }}>
-                    </lord-icon>
-                    <p> Creative reality</p>
+            <div className=' text-[9rem] p-10 flex flex-col justify-end  text-slate-100 min-h-[86vh]  bg-[url(/ai.jpg)] bg-cover bg-center '>
+                <div className=" w-full flex flex-col p-10 justify-end border-white/10 
+                  bg-black/50 backdrop-blur-[1px] shadow-2xl">
+                    <p>Your Wildest</p>
+                    <div className=' flex justify-between items-center'>
+                        <lord-icon
+                            src="https://cdn.lordicon.com/gupcdncx.json"
+                            trigger="hover"
+                            state="loop-cycle"
+                            colors="primary:lightblue,secondary:#fff"
+                            style={{ "width": "100px", "height": "100px" }}>
+                        </lord-icon>
+                        <p> Creative reality</p>
+                    </div>
                 </div>
+
             </div>
             <div className='flex p-15 min-h-screen  justify-between bg-blue-300' >
-                <div className='flex flex-col justify-between items w-1/2 '>
-                    <p className='text-9xl'>Creativity powered</p>
-                    <p className='text-3xl font-semibold'>Patreon is the best place to build community with your biggest fans, share exclusive work, and turn your passion into a lasting creative business.
-                    </p>
+                <div className='flex flex-col gap-20 items-center w-[70%] '>
+                    <p className='text-8xl'>Turning passions into Businesses worth Mention</p>
+                    <div className='flex flex-col w-1/2 gap-10'>
+                        <p className='text-3xl font-semibold '>Patreon is the best place to build community with your biggest fans, share exclusive work, and turn your passion into a lasting creative business.
+                        </p>
+                        <button className='px-6 py-3 rounded-4xl bg-black text-white w-1/3'>Set up shop</button>
+                    </div>
+
                 </div>
                 <div className='text-9xl flex flex-col items-end justify-end'>
-                    <p>by</p>
-                    <p>fandom</p>
+                    <img src="/Mobile_Insights_931320bfbd.png" alt="" width={300} />
                 </div>
             </div>
             <div className='min-h-screen p-15 bg-[url(/qhd_Patreon_Website_Module3_2_X_72dpi_Kamauu1_c26920eff8.jpg)] bg-cover bg-center text-white flex justify-between items-end'>

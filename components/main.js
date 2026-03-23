@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Main = () => {
     return (
-        <div className=' '>
+        <div className='overflow-hidden '>
             <div className='flex flex-col justify-end text-[10rem] min-h-[86vh]  p-10'>
                 <p>Your Wildest</p>
                 <div className=' flex justify-between items-center'>
@@ -41,7 +41,8 @@ const Main = () => {
                     <img src="/small_Component_Card_8_dbf120bf79.png" alt="component" className='w-60' />
                 </div>
                 <div className='flex justify-between'>
-                    <Image src="/Component_Card_11_18b523208f.png" alt="component" className='' width={300} height={200} />
+                    <Image src="/Component_Card_11_18b523208f.png" alt="component" className='' width={300} height={200}
+                        style={{ width: '100%', height: 'auto' }} />
                     <p className='text-9xl w-1/2'>complete creative control</p>
                     <img src="/medium_Component_Card_6_00ed3428aa.png" alt="component" className=' w-60 mt-10' />
                 </div>
@@ -70,10 +71,25 @@ const Main = () => {
                     <button className='px-6 py-4 w-1/4 mx-50 bg-black text-white  rounded-4xl'> Build real community</button>
                 </div>
                 <div className='rounded-4xl bg-black w-100 overflow-hidden border'>
-                    <video  muted={true} src="/1_Chelsea_1161fe215b.mp4" loop={true} autoPlay ></video>
+                    <video muted={true} src="/1_Chelsea_1161fe215b.mp4" loop={true} autoPlay ></video>
                 </div>
             </div>
-            
+            <div className='flex items-center justify-center bg-blue-300 min-h-screen '>
+                <div className=' bg-white rounded-4xl p-10  flex flex-col gap-15 items-center'>
+                    <div className='flex gap-8 flex-col items-center'>
+                        <img src="/logomark-animated.webp" width={60} alt="logo" />
+                        <p className='text-3xl'>Your world to create</p>
+                    </div>
+
+                    <div className='flex flex-col gap-8 items-center'>
+                        <button className='px-6 py-3 rounded-4xl text-white bg-black w-full'>Get started</button>
+                        <p >
+                            Already have an account? <a href="">Log in</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
         </div>
     )
 }

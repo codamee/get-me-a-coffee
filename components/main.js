@@ -22,7 +22,7 @@ const Main = () => {
                 </div>
 
             </div>
-            <div className='flex p-15 min-h-screen  justify-between bg-blue-300' >
+            <div className='flex p-30 min-h-screen  justify-between bg-blue-300' >
                 <div className='flex flex-col gap-20 items-center w-[70%] '>
                     <p className='text-8xl'>Turning passions into Businesses worth Mention</p>
                     <div className='flex flex-col w-1/2 gap-10'>

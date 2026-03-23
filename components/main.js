@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Main = () => {
     return (
         <div className='overflow-hidden '>
-            <div className='flex flex-col justify-end text-[10rem] min-h-[86vh]  p-10'>
+            <div className='flex flex-col justify-end text-[10rem] min-h-[86vh] bg-blue-400  p-10'>
                 <p>Your Wildest</p>
                 <div className=' flex justify-between items-center'>
                     <lord-icon
@@ -42,7 +42,7 @@ const Main = () => {
                 </div>
                 <div className='flex justify-between'>
                     <Image src="/Component_Card_11_18b523208f.png" alt="component" className='' width={300} height={200}
-                        style={{ width: '100%', height: 'auto' }} />
+                        style={{ width: '25%    ', height: 'auto' }} />
                     <p className='text-9xl w-1/2'>complete creative control</p>
                     <img src="/medium_Component_Card_6_00ed3428aa.png" alt="component" className=' w-60 mt-10' />
                 </div>
@@ -74,10 +74,10 @@ const Main = () => {
                     <video muted={true} src="/1_Chelsea_1161fe215b.mp4" loop={true} autoPlay ></video>
                 </div>
             </div>
-            <div className='flex items-center justify-center bg-blue-300 min-h-screen '>
-                <div className=' bg-white rounded-4xl p-10  flex flex-col gap-15 items-center'>
+            <div className='flex bg-[url(/bg.jpg)] bg-center bg-cover items-center justify-center min-h-screen '>
+                <div className=' rounded-4xl p-15  bg-white  flex flex-col gap-15 items-center '>
                     <div className='flex gap-8 flex-col items-center'>
-                        <img src="/logomark-animated.webp" width={60} alt="logo" />
+                        <img src="/logomark-animated.webp" width={70} alt="logo" />
                         <p className='text-3xl'>Your world to create</p>
                     </div>
 

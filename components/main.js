@@ -56,6 +56,24 @@ const Main = () => {
                     </div>
                 </div>
             </div>
+            <div className='flex p-20 gap-20 bg-blue-400 items-center'>
+                <div className='w-[70%] flex flex-col gap-10'>
+                    <p className='text-[8rem]'>
+                        Creators. Fans.
+                        Nothing in
+                        between.
+                    </p>
+                    <p className='text-xl w-1/2  mx-50'>
+                        Patreon gives you a direct line of access to your fan community, with no ads or gatekeepers in the way.
+                        Through real-time group chats, comments, DMs, and even directly over email, you can connect more deeply and directly with your community here than anywhere else.
+                    </p>
+                    <button className='px-6 py-4 w-1/4 mx-50 bg-black text-white  rounded-4xl'> Build real community</button>
+                </div>
+                <div className='rounded-4xl bg-black w-100 overflow-hidden border'>
+                    <video  muted={true} src="/1_Chelsea_1161fe215b.mp4" loop={true} autoPlay ></video>
+                </div>
+            </div>
+            
         </div>
     )
 }

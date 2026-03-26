@@ -42,9 +42,9 @@ const Dashboard = () => {
         </div>
       </div>
       <div className="main h-full flex-1">
-        <div className='w-full flex flex-col gap-2'>
-          <img src="/dashBg.jpg" alt="dash" className="w-full h-50 object-cover" />
-          <div className='w-full flex flex-col gap-2 items-center justify-center'>
+        <div className='w-full flex flex-col gap-2  relative'>
+          <img src="/dashBg.jpg" alt="dash" className="w-full h-67 object-cover" />
+          <div className='w-full flex flex-col gap-2 items-center justify-center absolute top-50'>
             <img src="/dashprofile.jpg" alt="profile" className='w-30 rounded-[10rem] border border-gray-700' />
             <div className='flex flex-col items-center gap-2'>
               <p className='text-3xl font-bold'>Raw Coding</p>
@@ -52,22 +52,21 @@ const Dashboard = () => {
               <p className='text-gray-400 text-sm'>419 members . 1 post . $14525 raised</p>
             </div>
             <div className='flex justify-around items-center p-4 gap-4 w-full'>
-              <div className='p-4 rounded-md w-full flex flex-col gap-4 h-78 bg-slate-200 '>
+              <div className='p-4 rounded-md w-full flex flex-col gap-4 h-80 bg-slate-200 '>
                 <p className='font-bold text-xl'>Supporters</p>
-                <div className='flex flex-col gap-3 h-[90%] overflow-auto'>
-
-                  <p className='px-2 py-1 bg-slate-300 rounded-md'>Shubam donated $500 : "Lots of love bro "</p>
-                  <p className='px-2 py-1 bg-slate-300 rounded-md'>Shubam donated $500 : "Lots of love bro "</p>
-                  <p className='px-2 py-1 bg-slate-300 rounded-md'>Shubam donated $500 : "Lots of love bro "</p>
+                <div className='flex flex-col  gap-3 h-[90%] overflow-auto'>
+                  <p className='px-4 py-2 bg-slate-100 rounded-md'>Shubam donated $500 : "Lots of love bro "</p>
+                  <p className='px-4 py-2 bg-slate-100 rounded-md'>Shubam donated $500 : "Lots of love bro "</p>
+                  <p className='px-4 py-2 bg-slate-100 rounded-md'>Shubam donated $500 : "Lots of love bro "</p>
 
                 </div>
               </div>
-              <div className='bg-slate-200 p-4 rounded-md w-full flex flex-col gap-4 h-78'>
+              <div className='bg-slate-200 p-4 rounded-md w-full flex flex-col gap-5 h-80'>
                 <p className='font-bold text-xl'>Make a Payment</p>
                 <div className='flex flex-col gap-2'>
-                  <input className='px-4 py-2 w-full rounded-md outline-0  bg-slate-300' type="text" name="name" id="name" placeholder='Enter Name' />
-                  <input className='px-4 py-2 w-full rounded-md outline-0  bg-slate-300' type="text" name="message" id="message" placeholder='Enter Message' />
-                  <input className='px-4 py-2 w-full rounded-md outline-0  bg-slate-300' type="number" name="amount" id="amount" placeholder='Enter Amount' />
+                  <input className='px-4 py-2 w-full rounded-md outline-0  bg-slate-100' type="text" name="name" id="name" placeholder='Enter Name' />
+                  <input className='px-4 py-2 w-full rounded-md outline-0  bg-slate-100' type="text" name="message" id="message" placeholder='Enter Message' />
+                  <input className='px-4 py-2 w-full rounded-md outline-0  bg-slate-100' type="number" name="amount" id="amount" placeholder='Enter Amount' />
                   <button className='px-4 py-2 font-semibold text-white bg-black rounded-md'>Submit</button>
                 </div>
                 <div className='flex gap-4'>
